@@ -1,0 +1,234 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%           PACKAGES          %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{stmaryrd}
+\usepackage{bm}
+\usepackage{bbm}
+\usepackage{epigraph}
+\renewcommand{\epigraphflush}{flushleft}
+% \usepackage{wasysym}
+% \usepackage{float}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%            LAYOUT           %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\rouge}[1]{{\color{red} #1}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%    ENVIRONMENTS/COMMANDS    %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\makeatletter
+\newcommand{\pushright}[1]{\ifmeasuring@#1\else\omit\hfill$\displaystyle#1$\fi\ignorespaces}
+\newcommand{\pushleft}[1]{\ifmeasuring@#1\else\omit$\displaystyle#1$\hfill\fi\ignorespaces}
+\makeatother
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%            STRINGS          %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\xtor}{\textsf{XTOR-2F}}
+\newcommand{\xtorK}{\textsf{XTOR-K}}
+\newcommand{\chease}{\textsf{CHEASE}}
+\newcommand{\TS}{\textsf{Tore Supra}}
+\newcommand{\JET}{\textsf{JET}}
+%\newcommand{\ITER}{\textsf{ITER}}
+\newcommand{\TCV}{\textsf{TCV}}
+\newcommand{\MHD}{\textsf{MHD}}
+\newcommand{\ecMHD}{$\eta\chi$\textsf{MHD}}
+\newcommand{\IdealMHD}{\emph{Eqs.}~(\ref{eq:idealMHD_Continuity})-(\ref{eq:idealMHD_MagneticField})}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%          CROSS REFS         %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\refeq}[1]{\emph{Eq.}~(\ref{eq:#1})}
+\newcommand{\refeqs}[1]{\emph{Eqs.}~(\ref{eq:#1})}
+\newcommand{\refeqss}[2]{\emph{Eqs.}~(\ref{eq:#1}-\ref{eq:#2})}
+\newcommand{\refig}[1]{Fig.~\ref{fig:#1}}
+\newcommand{\refigs}[1]{Figs.~\ref{fig:#1}}
+\newcommand{\reftab}[1]{Table~\ref{tab:#1}}
+\newcommand{\refch}[1]{chapter~\ref{ch:#1}}
+\newcommand{\refap}[1]{appendix~\ref{ap:#1}}
+\newcommand{\refsec}[1]{section~\ref{sec:#1}}
+\newcommand{\refssec}[1]{section~\ref{subsec:#1}}
+\newcommand{\refsssec}[1]{section~\ref{subsubsec:#1}}
+\newcommand{\Refch}[1]{Chapter~\ref{ch:#1}}
+\newcommand{\Refap}[1]{Appendix~\ref{ap:#1}}
+\newcommand{\Refsec}[1]{Section~\ref{sec:#1}}
+\newcommand{\Refssec}[1]{Section~\ref{subsec:#1}}
+\newcommand{\Refsssec}[1]{Section~\ref{subsubsec:#1}}
+\newcommand{\refs}{~{\bf\color{red} (Refs needed !!)}~}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%          CONSTANTS          %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%             MATHS           %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Units
+\newcommand{\msq}{\textrm{m}^2}
+\newcommand{\mcub}{\textrm{m}^3}
+\newcommand{\mus}{\mu\textrm{s}}
+\newcommand{\Joule}{\textrm{J}}
+\newcommand{\MeV}{\textrm{MeV}}
+\newcommand{\keV}{\textrm{keV}}
+\newcommand{\Dunit}{\textrm{m}^2.\textrm{s}^{-1}}
+\newcommand{\Vunit}{\textrm{m}.\textrm{s}^{-1}}
+
+%% Macros
+\newcommand{\parent}[1]{\left(#1\right)}
+\newcommand{\crochet}[1]{\left[#1\right]}
+
+%% Elements
+\newcommand{\Deut}{\textrm{D}}
+\newcommand{\Trit}{\textrm{T}}
+\newcommand{\Lith}{\textrm{Li}}
+\newcommand{\neut}{\textrm{n}}
+\newcommand{\prot}{\textrm{p}}
+\newcommand{\Helium}{\textrm{He}}
+\newcommand{\QDT}{Q_{\Deut\Trit}}
+
+%% General
+
+\newcommand{\sigmav}{\langle\sigma v\rangle}
+\newcommand{\Vp}{v_\|}
+\newcommand{\VpZ}{V_{\|Z}}
+\newcommand{\vp}{v_\|}
+\newcommand{\va}{v_A}
+\newcommand{\psih}{\Psi^\star}
+\newcommand{\bpsih}{\bar{\Psi}^\star}
+\newcommand{\bpsihp}{\bar{\Psi}^{\star\prime}}
+\newcommand{\psihpp}{\Psi^{\star\prime\prime}}
+\newcommand{\bpsihpp}{\bar{\Psi}^{\star\prime\prime}}
+\newcommand{\etab}{\bar{\eta}}
+\newcommand{\rb}{\bar{r}}
+\newcommand{\xib}{\bar{\xi}}
+\newcommand{\psit}{\Psi_T}
+\newcommand{\pot}{\phi}
+\newcommand{\potp}{\phi^\prime}
+\newcommand{\pp}{p^\prime}
+\newcommand{\trec}{\tau_\mathrm{rec}}
+\newcommand{\taua}{\tau_A}
+\newcommand{\tauakad}{\tau_{A,\mathrm{Kad}}}
+\newcommand{\taur}{\tau_{R,s}}
+\newcommand{\rmix}{r_\mathrm{mix}}
+\newcommand{\rinv}{r_\mathrm{inv}}
+\newcommand{\ud}{\mathrm{d}}
+\newcommand{\eps}{\epsilon}
+\newcommand{\V}{{\bm v}}
+\newcommand{\U}{{\bm u}}
+\newcommand{\Y}{{\bm y}}
+\newcommand{\Fu}{{\bm F}_u}
+\newcommand{\FB}{{\bm F}_B}
+\newcommand{\Ll}{{\bf l}}
+\newcommand{\W}{{\bf W}}
+\newcommand{\B}{{\bf B}}
+\newcommand{\Bb}{{\bf b}}
+\newcommand{\Bt}{B_\theta}
+\newcommand{\Bp}{B_\varphi}
+
+\newcommand{\A}{{\bf A}}
+
+
+\newcommand{\Bru}{B^\psi}
+\newcommand{\Brl}{B_\psi}
+\newcommand{\Btu}{B^\chi}
+\newcommand{\Btl}{B_\chi}
+\newcommand{\Bpu}{B^\varphi}
+\newcommand{\Bpl}{B_\varphi}
+
+\newcommand{\eru}{{\bf e}^\psi}
+\newcommand{\erl}{{\bf e}_\psi}
+\newcommand{\etu}{{\bf e}^\chi}
+\newcommand{\etl}{{\bf e}_\chi}
+\newcommand{\epu}{{\bf e}^\varphi}
+\newcommand{\epl}{{\bf e}_\varphi}
+
+\newcommand{\eruN}{\nabla\psi}
+\newcommand{\etuN}{\nabla\chi}
+\newcommand{\epuN}{\nabla\varphi}
+
+\newcommand{\jac}{\mathcal{J}}
+\newcommand{\Lag}{\mathcal{L}}
+\newcommand{\Mom}{\mathcal{P}}
+\newcommand{\Vol}{\mathcal{V}}
+\newcommand{\Area}{\mathcal{A}}
+
+\newcommand{\E}{{\bf E}}
+\newcommand{\J}{{\bf J}}
+\newcommand{\Q}{{\bf q}}
+\newcommand{\xir}{\xi_r}
+\newcommand{\xirp}{\xi_r^\prime}
+\newcommand{\XI}{{\bm \xi}}
+\newcommand{\XIs}{{\bm \xi}^\star}
+\newcommand{\XIp}{{\bm \xi}_\perp}
+\newcommand{\XIps}{{\bm \xi}_\perp^\star}
+\newcommand{\X}{{\bm x}}
+\newcommand{\XX}{{\bm X}}
+\newcommand{\K}{{\bf k}}
+\newcommand{\R}{{\bm r}}
+\newcommand{\PressTens}{\bar{\bar{\bm p}}}
+\newcommand{\StressTens}{\bar{\bar{\bm \pi}}}
+\newcommand{\er}{\hat{\bm r}}
+\newcommand{\et}{\hat{\bm \theta}}
+\newcommand{\ep}{\hat{\bm \varphi}}
+\newcommand{\exh}{\hat{\bm x}}
+\newcommand{\eyh}{\hat{\bm y}}
+\newcommand{\ezh}{\hat{\bf z}}
+\newcommand{\eeta}{\hat{\bm \eta}}
+\newcommand{\ex}{{\bm e}_x}
+\newcommand{\ey}{{\bm e}_y}
+\newcommand{\ez}{{\bm e}_z}
+\newcommand{\eZ}{{\bm e}_Z}
+\newcommand{\bpsi}{\tilde{\psi}}
+\newcommand{\ordone}{\mathcal{O}(\epsilon)}
+\newcommand{\order}[1]{\mathcal{O}\parent{#1}}
+\newcommand{\dO}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\dd}[2]{\frac{\ud #1}{\ud #2}}
+\newcommand{\ddD}[2]{\frac{\ud^2 #1}{\ud #2^2}}
+\newcommand{\ddT}[2]{\frac{\ud^3 #1}{\ud #2^3}}
+\newcommand{\dive}{\nabla\cdot}
+\newcommand{\rot}{\nabla\times}
+\newcommand{\dotg}{\cdot\nabla}
+\newcommand{\gradpar}{\nabla_\|}
+\newcommand{\kap}{\frac{\nabla B}{B}}
+\newcommand{\curv}{{\bm \Xi}}
+\newcommand{\curvbis}{\nabla\times\frac{\B}{B^2}}
+\newcommand{\Kappa}{{\bm \kappa}}
+\newcommand{\mean}[1]{\langle#1\rangle}
+\newcommand{\dV}{\ud^3\V}
+\newcommand{\Int}{\int\dV\,}
+\newcommand{\picgl}{{\bm \bar{\Pi}_{CGL}}}
+\newcommand{\Id}{\mathds{1}}
+\newcommand{\wstari}{\omega^\star_i}
+\newcommand{\wstarTi}{\omega^\star_{Ti}}
+\newcommand{\wstare}{\omega^\star_e}
+\newcommand{\wstarTe}{\omega^\star_{Te}}
+\newcommand{\vstari}{\V^\star_i}
+\newcommand{\vstarit}{v^\star_{i\theta}}
+\newcommand{\vstare}{\V^\star_e}
+\newcommand{\m}{{\sf m}}
+\newcommand{\n}{{\sf n}}
+\newcommand{\zero}{{\bm 0}}
+\newcommand{\sci}[2]{#1\times 10^{#2}}
+\newcommand{\vpinch}{V_\textrm{pinch}}
+\newcommand{\PP}{\mathcal{P}}
+\newcommand{\KK}{\mathcal{K}}
+\renewcommand{\S}{{\bf S}}
+\newcommand{\shear}{\hat{s}}
+\newcommand{\pneo}{{\bm \Pi_{neo}}}
+\newcommand{\psneo}{{\bm \Pi_{s,neo}}}
+
+% by YS
+\newcommand{\bu}[1]{\boldsymbol{\mathrm{#1}}}
+\newcommand{\dxdt}[2]{\frac{\partial #1}{\partial #2}}
+
+%% In appendix F
+
+\newcommand{\nzu}{\underline{n_Z}}
+\newcommand{\vzu}{\underline{\VpZ}}

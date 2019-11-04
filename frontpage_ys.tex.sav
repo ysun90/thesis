@@ -1,0 +1,99 @@
+\begin{titlepage}
+
+\addtolength{\voffset}{-3cm}
+\begin{center}
+%\vspace{3cm}
+  %\hspace{3.5cm}
+\includegraphics[height=2cm]{/logo/logo_ULorraine_ys.png} \hspace{+0.4cm}
+\includegraphics[height=1.5cm]{/logo/logo_IJL_ys.png} \hspace{+0.6cm}
+\includegraphics[height=2cm]{/logo/logo_UGent_ys.png} \\
+%\hspace{+0.5cm}
+
+\vspace{0.6cm}
+
+\hspace{+0.3cm}
+\includegraphics[height=1.5cm]{/logo/logo_CEA_ys.png} \hspace{+0.5cm}
+\includegraphics[height=1.2cm]{/logo/logo_IRFM_ys.jpg}\hspace{+0.5cm} %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\includegraphics[height=1.5cm]{/logo/logo_FusionDC_ys.png} \\
+\hspace{+0.4cm}
+%{\Large {Aix-Marseille University ~~~~~~~~~~~~~~~~~ UGent university}\\}
+%\vspace{0.1cm}
+%{\large {\'E}cole doctorale: \emph{Physique et Sciences de la Matière}}\\ \vspace{0.2cm}
+%{\Large Spécialité : \textbf{Energie, Rayonnement et Plasma}}\\
+%\hspace{-0.9cm}
+%{\Large Energy, Radiation and Plasma ~~~~~~~~~~~~Engineering Physics}\\
+
+%\vspace{0.5cm}
+{\LARGE \textsc{Doctoral thesis\\}}
+
+
+
+\vspace{0.8cm}
+
+\begin{tabular}{c}
+\noalign{\smallskip} \hline \hline \noalign{\smallskip}\\
+{\Large \bf {{\Large~~~}Application of Advanced Analysis Techniques to{\Large~~~}}}\\ \\
+{\Large \bf {Reflectometry Spectra for the Study of }}\\ \\
+{\Large \bf {Plasma Turbulence in Tokamaks}}\\ \\
+
+
+%{\huge \bf { }}\\ \\
+%{\huge \bf {}}\\ \\
+%{\huge \bf {}}\\ \\
+
+
+
+\noalign{\smallskip} \hline \hline \noalign{\smallskip}
+\end{tabular}
+
+
+\vspace{0.4cm}
+{\Large
+%Present\'ee par:\\ \vspace{.2cm}
+Presented by:\\ \vspace{.4cm}
+\textbf{Yan Sun}}\\
+
+\vspace{0.4cm}
+
+%{\normalsize Thèse soutenue publiquement le 26 octobre 2015 devant le jury composé de :}\\
+{\normalsize Defense committee for public Ph.D. defense on December, $2^{\rm th}$ 2018:}\\
+\vspace{.4cm}
+\begin{tabular}{lcl}
+\hline
+    Dr. Roland \textsc{Sabot}  & \hspace{0cm} & Thesis Director -- CEA\\
+    Prof. St\'{e}phane \textsc{Heuarux} & \hspace{0cm} & Thesis Co-Director -- ULorraine\\
+    ??? \textsc{???} & \hspace{0cm} & Referee -- ???\\
+    ??? \textsc{???} & \hspace{0cm} & Referee -- ???\\
+    ??? \textsc{???} & \hspace{0cm} & Examiner -- ???\\
+    Dr. S\'{e}bastien \textsc{Hacquin}  & \hspace{0cm} & Examiner -- CEA\\
+    Prof. Geert \textsc{Verdoolaege} & \hspace{0cm} & Thesis promoter -- UGent\\
+
+\hline
+\end{tabular}
+
+\vspace{0.5cm}
+
+This dissertation is submitted for the joint degree of\\
+%\underline{Laboratoire d'accueil} :\\
+Doctor of Physics, University of Lorraine \& \\
+Doctor of Engineering Physics, Ghent University\\
+
+\vspace{.5cm}
+Main laboratories (Jan 2016 -- Dec 2018):\\
+%\underline{Laboratoire d'accueil} :\\
+Institute for Magnetic Fusion Research, CEA Cadarache 13108 Saint-Paul-lez-Durance, France \\
+Department of Applied Physics, Ghent University (Apr 2016 -- Jan 2017)\\
+
+%\vspace{.1cm}
+%{\normalsize Oct 2012 -- Oct 2015}
+
+\end{center}
+
+
+\end{titlepage}
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../main"
+%%% End:

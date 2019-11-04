@@ -1,0 +1,145 @@
+\pdfobjcompresslevel 0
+\documentclass[a4paper,12pt,twoside,pdftex]{ThesisStyle}
+%\documentclass[a4paper,12pt,twoside,pdftex,draft]{ThesisStyle}
+\usepackage{multicol}
+\usepackage{here}
+\usepackage{tabularx}
+\usepackage[bottom]{footmisc}
+\usepackage{upgreek}
+\usepackage{amsmath}
+\usepackage{multirow}
+\usepackage{xcolor}
+\usepackage{amssymb}
+\usepackage{lipsum}
+\usepackage{breakcites}
+\usepackage{tikz}
+\usepackage{fixltx2e}
+\usepackage{enumerate}
+\usepackage{footnote}
+
+
+%\usepackage{mathrsfs}
+
+%\usepackage{tocbibind}
+% Control TOC - see line 228 of formatAndDefs
+
+%\usepackage{natbib}
+
+%\hyphenation{Lon-g-las-t-na-me}
+%\usepackage{cleveref}
+%\usepackage{pbox}
+%\titlespacing*{\paragraph} {0pt}{3.25ex plus 1ex minus .2ex}{1em}
+% Ecriture normalisée des nombres avec unité : $\SI{299792458}{m.s^{-1}}$ et sans unit é : $\num{7.2973525698e-3}$
+\usepackage{sistyle}
+	\SIdecimalsign{.}
+	\SIthousandsep{,}
+	\SIproductsign{\times}
+\newcommand{\argmax}{\arg\!\max}
+ \renewcommand{\labelitemi}{\tiny$^{_\blacksquare}$}
+ \renewcommand{\arraystretch}{1.212}
+\newcommand{\tikzcircle}[2][red,fill=red]{\tikz[baseline=-0.5ex]\draw[#1,radius=#2] (0,0) circle ;}	
+%\newcommand{\ud}{\mathrm{d}}  % Upright d for use in a differential.
+
+
+\include{formatAndDefs_ys}
+\addtolength{\voffset}{-0.5cm}
+\addtolength{\hoffset}{-1cm}
+\addtolength{\textwidth}{2cm}
+\addtolength{\textheight}{1.5cm}
+%\addtolength{\hoffset}{-1cm}
+%\addtolength{\textwidth}{2cm}
+%\addtolength{\textheight}{1.5cm}
+\include{defs_ys}
+%\let\myBib\thebibliography
+%\let\endmyBib\endthebibliograp
+%\renewcommand\thebibliography[1]{\ifx\relax#1\relax\else\myBib{#1}\fi}
+
+%\includeonly{Chapter2_ys}
+
+%% centered chapter title
+%\usepackage{titlesec}
+%\titleformat{\chapter}[display]{\large\centering}{Chapter\ \thechapter}{0.5ex}{}
+
+\usepackage{longtable}
+\usepackage{CJK}
+\usepackage{tocloft}
+
+\begin{document}
+\begin{CJK*}{GBK}{kai}
+\dominitoc
+
+%\newpage
+%\clearpage
+%\thispagestyle{empty}
+%\null
+%\newpage
+%\thispagestyle{empty}
+
+
+\include{frontpage_ys_ul}
+%\include{frontpage_ys_ul_fr}
+%\include{frontpage_ys_ug}
+\newpage
+\cleardoublepage%\null
+
+\include{innerpage_ys}
+\newpage
+\cleardoublepage%\null
+
+\pagenumbering{roman}
+\frontmatter
+
+\include{Summary_ys_ul}
+%\include{Abstract_ys_en}
+%\include{Abstract_ys_fr}
+%\include{Abstract_ys_be}
+\include{Acknowledgements_ys}
+\include{Abbreviations_ys}
+\include{Symbols_ys}
+
+\tableofcontents % Prints the main table of contents
+\setcounter{mtc}{2}
+%\listoffigures % Prints the list of figures
+%\listoftables % Prints the list of tables
+
+\clearpage
+\include{Dedication_ys}
+
+\mainmatter
+
+\setcounter{mtc}{4} % the number changes and just try large ones
+\include{Chapter1_ys_gv}
+\include{Chapter2_ys_gv}
+\include{Chapter3_ys_gv}
+\include{Chapter4_ys_gv}
+\include{Chapter5_ys_gv}
+\include{Chapter6_ys_gv}
+\include{Chapter7_ys_gv}
+
+\bibliographystyle{ThesisStyle}
+\bibliography{Biblio_ys}
+
+\appendix
+%\begin{appendices}
+\include{AppendixA_ys_gv}
+%\include{AppendixB_ys}
+%\include{AppendixC_ys}
+%\end{appendices}
+
+\include{Abstract_ys}
+
+\backmatter
+
+\newpage
+\clearpage
+\thispagestyle{empty}
+\null
+\newpage
+\thispagestyle{empty}
+
+\end{CJK*}
+\end{document}
+
+% \textnormal{} remove unwanted italics in title of bibtex
+% \boldsymbol{\upsilon} bold Greek letters in math mode
+% \newpage

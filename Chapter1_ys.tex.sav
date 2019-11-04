@@ -1,0 +1,410 @@
+\chapter{Introduction}\label{ch:Introduction}
+\graphicspath{{chapter1_ys/}}
+
+\section{Energy issues and solutions}
+
+\subsection{Demand for new energy sources}
+
+Fossil fuels (coal, oil and natural gas) have greatly influenced our lives for a long time and still play a dominate role in the current world energy consumption, as shown in Fig.~\ref{fig:energy2017}. The fossil fuels not only have a harmful effect on the environment, e.g., the air pollution and the global warming by the greenhouse gas, but also face the exhaustion problem \cite{Abas_2015_Fs}. It has been estimated that coal, oil and natural gas will be used up to about 110, 50 and 50 years, respectively \cite{Shafiee_2009_NP}. The increasing rate and types of the renewable energy \cite{Akella_2009_RE} are the sign of the rising need for cleaner and endless energy with more economic efficiency. However, those renewable energies including water, solar, wind, geothermal and biomass \cite{Fridleifsson_2001_RSER, Momirlan_2005_IJHE, Jacobson_2011_EP} are limited by the local natural conditions thus not feasible around the world \cite{Panwar_2011_RSER} as well as the storage problems \cite{Agbossou_2004_IEEE, Kaldellis_2007_En, Rentizelas_2009_RSER}.
+
+%%
+\begin{figure}[!h]
+\begin{centering}
+\includegraphics[scale=0.5]{energy2017.png}
+\par\end{centering}
+\caption[World energy consumption]{World energy consumption in 2017 \cite{BP_2017_Energy}.}\label{fig:energy2017}
+\end{figure}
+%%
+
+Nuclear energy based on the mass-energy equation $E=mc^2$ is an alternative option and it has two approaches: fusion and fission, as shown in Fig.~\ref{fig:binding_energy}. Fusion and fission are the combination of light atoms and the split of heavy atoms, respectively, both with huge amount of energy generation. Fission energy has been used in the electricity generation for many years and it does not generate greenhouse gas as the fossil fuels. However, the radioactive nuclear waste and the devastating nuclear leak in accidents such as the recent Fukushima event \cite{Bolsunovsky_2011_JER} are the drawbacks. In addition, considering the limit of uranium reserves, fission was estimated to be used for another 150 years \cite{Dittmar_2013_STE}.
+
+%%
+\begin{figure}
+\begin{centering}
+\includegraphics[scale=0.3]{binding_energy.png}
+\par\end{centering}
+\caption[Binding energy per nucleon]{Binding energy per nucleon evolves with the atomic mass number.}\label{fig:binding_energy}
+\end{figure}
+%%
+
+On the other hand, fusion energy is clean, with low radioactivity \cite{Khvesyuk_2002_PPCF} and without emissions of greenhouse gases, and has nearly endless resources: deuterium, helium-3 \cite{Wittenberg_1986_FT} and tritium come from the ocean, the moon and the self-breeding from $_3$Li$^6$ (abundant in the earth shell), respectively. Only the resources on the earth can support our energy consumption for at least thousands of years \cite{Ongena_2012_FST} during which humans should have time to discover more advanced energy form.
+
+\subsection{Principles of fusion}
+
+Figure \ref{fig:binding_energy} shows that the binding energy increases much faster towards the maximum energy in the moderate mass number (Fe) in the fusion region than the fission region, leading to a higher efficiency of energy generation of fusion. The basic fusion reactions with the largest cross sections are \cite{Freidberg_2007_Plasma}: %
+%%%%%%%%%%%%%%%%%
+\begin{eqnarray}
+    \mathrm{D} &+& \mathrm{T} \rightarrow \alpha + \mathrm{n} + \mathrm{17.6\ MeV}, \\
+    \mathrm{D} &+& \mathrm{D} \rightarrow \mathrm{He^3} + \mathrm{n} + \mathrm{3.27\ MeV}, \\
+    \mathrm{D} &+& \mathrm{D} \rightarrow \mathrm{T} + \mathrm{p} + \mathrm{4.03\ MeV}, \\
+    \mathrm{D} &+& \mathrm{He^3} \rightarrow \alpha + \mathrm{p} + \mathrm{18.3\ MeV}.
+\end{eqnarray}
+%%%%%%%%%%%%%%%%
+\noindent Here, D is deuterium nucleus ($_1$H$^2$), T is tritium nucleus ($_1$H$^3$), He$^3$ is helium-3 ($_2$He$^3$), $\alpha$ is helium nucleus (alpha particle, $_2$He$^4$), n is neutron, p is proton. To realize a controlled self-sustaining burning of the fuels, the product of fuel density and energy confinement time should satisfy the ignition condition \cite{Wesson_1997_Tokamaks}:%
+%%%%%%%%%%%%%%%%
+\begin{equation}
+    n\tau_\mathrm{E}> 1.5 \times 10^{20}\ m^{-3}s.
+\end{equation}
+%%%%%%%%%%%%%%
+\noindent In terms of power balance, the loss power is balanced by the externally supplied power plus the $\alpha-$particle power: $P_L=P_H+P_{\alpha}$. A factor called $Q$ is a measurement of successful reactor condition:%
+%%
+\begin{equation}\label{eq:Q}
+  Q=\frac{P_{\alpha}}{P_H},
+\end{equation}
+\noindent here, $Q=1$ means that 20$\%$ of the applied heating power comes from the $\alpha-$particle. At ignition, $P_H$ should be zero and $Q\rightarrow\infty$ thus all the loss power is compensated by the $\alpha-$particle power.
+
+There are two distinct methods to approach the condition: magnetic confinement fusion (MCF) \cite{Artsimovich_1972_NF} and inertial confinement fusion (ICF) \cite{Miller_2004_NF_NIF, Craxton_2015_PoP}. MCF aims at increasing the confinement time of low-density plasmas using magnetic fields whereas ICF confines extremely high density plasmas with laser beam during a short time. ICF has been studied for instance at the National Ignition Facility (NIF) \cite{Moses_2016_FST} but the ignition condition has not been reached due to some unsolved physical problems such as controlling symmetry of the imploding fuel \cite{Michel_PRL_2009}, Rayleigh-Taylor instabilities \cite{Nagel_2017_PoP}, shockwave convergence \cite{Ma_2016_IEEE}, etc., and the $Q$ value is much lower than the expectation \cite{Ross_2015_PRE, Le-Pape_2018_PRL}. In the meantime, the ignition condition and the $Q$ value have been greatly progressed through MCF with confinement times on the order of magnitude of seconds and $Q>1$ \cite{Romanelli_2015_NF}. The essential motivation of this thesis is based on MCF, which is the most advanced fusion method.
+
+\subsection{Plasmas}
+
+In nuclear fusion, high temperature (typically tens of keV or tens of millions of degrees) is required to overcome the strong Coulomb repulsion. At such high temperatures, the kinetic energy per particle is much larger than its ionization energy (order of eV) so the reaction fuels no longer form neutral atoms but exist in the plasma state.
+
+The magnetohydrodynamics (MHD) \cite{Goldston_1995_Plasma, Freidberg_2007_Plasma} and kinetic theory \cite{Stix_1992_Waves, Bittencourt_2004_Plasma} have been developed to describe the complex plasmas behaviors in space and laboratories. In MHD description, plasmas are regarded as fluid elements in electromagnetic fields; in kinetic theory, the distribution function in six-dimensional phase space is used to describe the plasma motions in a statistical view.
+
+Intuitively, a plasma is a quasi-neutral gas of charged and neutral particles \cite{Chen_2006_Plasma} and the movements of the charged particles are mainly determined by long-range electromagnetic forces instead of short-range Coulomb collisions. In order to confine the charged particles, the external magnetic fields can be used.
+
+\section{Tokamaks}
+
+\subsection{Magnetic confinement and geometry}
+
+In nuclear fusion plasmas the charged particles are confined doing gyro motions around the external magnetic field lines. Figure \ref{fig:gyro_motion} shows the helical motion of a charged particle around $\textbf{B}$ in uniform magnetic fields. With the Lorentz force $F=q_{s} \boldsymbol{\upsilon} \times \bf{B}$, the gyro radius or Larmor radius $\rho_{s}$ and the gyro frequency $\omega_{cs}$ are defined as
+\begin{eqnarray}
+  \rho_{s} &=& \frac{m_{s}\upsilon_{\perp}}{q_{s}B}, \\
+  \omega_{cs} &=& \frac{q_{s}B}{m_{s}},
+\end{eqnarray}
+\noindent where $m_{s}$ is the mass, $\upsilon_{\perp}$ is the velocity perpendicular to $\textbf{B}$, $q_{s}$ is the charge, $B$ is the magnitude of the uniform magnetic fields for a particle species $s$.
+
+%%
+\begin{figure}
+\begin{centering}
+\includegraphics[scale=0.2]{gyro_motion.png}
+\par\end{centering}
+\caption[Gyro motion of charged particles in magnetic fields]{Gyro motion of charged particles in magnetic fields. The uniform magnetic fields are prescribed for simplicity. Copyright@ 2004 Pearson Education, Inc., publishing as Addison Wesley.}\label{fig:gyro_motion}
+\end{figure}
+%%
+
+In a cylindrical configuration, the particles loss the confinement in the ends of the magnetic field lines due to the parallel velocity $\upsilon_{\parallel}$. So the magnetic fields should be connected end to end by bending the cylindrical configuration into a torus. Furthermore, in order to compensate the particle drifts caused by the torroidal geometry effect, the magnetic fields have to be twisted to become helical field lines. There are two methods to generate the helical magnetic fields. One straightforward way is to construct helical magnetic coils and the corresponding apparatus is called stellarator. However, the building of such magnetic coils needs extremely high accuracy and it is very complicated to guarantee the precise magnetic fields \cite{Motojima_2000_NF_LHD}. Tokamak is the other concept to realize the required magnetic configuration through large plasma currents. The confinement performance of tokamaks has been greatly improved during last decades and the International Thermonuclear Experiment Reactor (ITER) being built in southern France will become the largest tokamak in the world and will test the technical feasibility of the fusion energy.
+
+Figure \ref{fig:magnetic_field} shows the generation of the helical magnetic fields ($B_{tot}$) through the composition of toroidal magnetic fields $B_{tor}$ and poloidal magnetic fields $B_{pol}$ in tokamaks. The toroidal and poloidal magnetic fields are generated by the external magnetic coils and the plasma current ($I_p$), respectively. In tokamaks, the toroidal plasma current is very large (order of MA) to generate proper $B_{pol}$.
+
+%%
+\begin{figure}
+\begin{centering}
+\includegraphics[scale=0.6]{B.png}
+\par\end{centering}
+\caption[Composition of the total helical magnetic fields]{Composition of the total helical magnetic fields $B_{tot}$ (c) in tokamaks from (a) toroidal $B_{\phi}$  and (b) poloidal $B_{\theta}$ magnetic fields.}\label{fig:magnetic_field}
+\end{figure}
+%%
+
+The charged particles (electrons and ions) in the confined plasmas move around the torus along the helical magnetic fields. Assuming that the particles return to the previous positions after $m$ laps in the toroidal direction and $n$ laps in the poloidal direction, the \emph{safety factor} $q$ is defined as %
+%%
+\begin{equation}
+q=\frac{m}{n},
+\end{equation}
+%%
+\noindent which is the measurement of twist or helicity of the magnetic fields, i.e., the weaker the twist the larger the safety factor $q$.
+The plasmas in tokamaks become unstable when $q$ is smaller than 1, so larger $q$ provides better stability, explaining where the name safety factor comes from.
+
+%%
+\begin{figure}
+\begin{centering}
+\includegraphics[scale=0.3]{cross_section.png}
+\par\end{centering}
+\caption[Cross-section of tokamkas]{Illustration of a simple circular cross-section of tokamaks to define the basic parameters in tokamak configurations.}\label{fig:cross_section}
+\end{figure}
+%%
+
+Figure \ref{fig:cross_section} shows the cross-section of the plasmas in tokamaks, with $\phi$, $\theta$, $R$ the toroidal, poloidal and radial coordinate, respectively. The major radius of the tokamaks ($R_p$) is defined as the distance between the plasma center ($O$) and the central axis ($L_0$). In the plane of the poloidal cross-section, the plasmas positions are determined by the  polar coordinates ($r,\theta$). The helical magnetic fields form magnetic surfaces at different radial position ($r$) from the plasma center. The magnetic fields are closed within each magnetic surface except in the edge region, where the field lines are directed towards the wall.
+
+The last closed field surface (LCFS) is the separation between the closed and open magnetic field lines. Accordingly, the minor radius of the plasmas ($a$) is defined as the radial position of the LCFS with respect to the plasma center. The inner and outer part with respect to the plasma center of the tokamak are defined as the high field side (HFS) and low field side (LFS) due to the fact that magnetic field  decreases monotonously from the central axis through the inner part to the outer part. Normally, the safety factor profiles increasing monotonously from the plasma center towards the edge and being symmetrical with respect to the plasma center, can be approximated by %
+%%
+\begin{equation}
+q(r)=\frac{2{\pi}r^2B_{\phi}}{\mu_0I(r)R},
+\end{equation}
+%%
+\noindent where $r$ is the radial position in the poloidal cross-section, $\mu_0$ is the space permeability, $I(r)$ is the plasma current in $r$, $R$ is the radial position in torus. So the edge safety factor ($q_{\psi}$) is given by%
+%%
+\begin{equation}
+q_{\psi}=\frac{2{\pi}a^2B_{\phi}}{\mu_0I(a)R}.
+\end{equation}
+%%
+
+The radial positions with rational numbers of the safety factor ($q=1,2,3/2,4/3,...$) are important since the MHD instabilities such as magnetic islands and tearing modes can form under certain conditions. Especially, the $q=1$ position is related to the sawteeth instabilities \cite{Chapman_2011_PPCF_ST_review}, which are periodic crash and relaxation of the core plasma temperature affecting the plasma confinement.
+
+In slow varying magnetic fields, the magnetic moment %
+%%
+\begin{equation}
+\mu = \frac{mv_{\perp}^2}{2B}
+\end{equation}
+%%
+\noindent is an adiabatic invariant. So the particles with small $v_{\parallel}$ could be reflected in the region with higher magnetic fields and thus trapped in the LFS. Figure \ref{fig:trapped_particles} shows the two types of the charged particles: trapped and passing particles. The trapped particles have a trajectory whose poloidal projection is banana-shaped and the banana width is:
+%%
+\begin{equation}
+\delta_b = \frac{2q\rho_s}{\sqrt{r/R}}.
+\end{equation}
+%%
+
+%%
+\begin{figure}
+\begin{centering}
+\includegraphics[scale=0.4]{trapped_particles.png}
+\par\end{centering}
+\caption[Trapped and passing particles]{Trapped and passing particles in the view of the poloidal cross-section of tokamaks.}\label{fig:trapped_particles}
+\end{figure}
+%%
+
+\subsection{Heating scenarios}
+
+In a self-burning D-T fusion plasma, the energy losses are balanced by the energy of the $\alpha$ particles. However, to fulfil the ignition condition or study the plasma behaviors without the $\alpha$ particles, it is necessary to provide some additional heating \cite{Wesson_1997_Tokamaks}.
+
+The fundamental heating method is the Ohmic heating by the large toroidal plasma current through the Joule effect. The Ohmic heating density is %
+%%
+\begin{equation}
+P_{\mathrm{Ohmic}}=\eta j^2,
+\end{equation}
+%%
+\noindent where $\eta$ and $j$ are the plasma resistivity and current density, respectively. In Ohmic heating operation, there are two different confinement regions associated to the electron density:
+\begin{itemize}
+
+  \item At low densities, the confinement time $\tau_{E}$ increases linearly with the increase of the density in the so-called linear Ohmic confinement (LOC).
+      
+  \item Above a critical density threshold, the confinement time $\tau_{E}$ saturates in the so-called Ohmic confinement (SOC) regime.
+      
+\end{itemize}
+\noindent The critical density of the LOC-SOC transition can be estimated \cite{shimomura_LOC_SOC_transition_1985}: %
+%%
+\begin{equation}
+n_{c} \approx \frac{I_p\mu_0}{2{\pi}a^2}\sqrt{\frac{A_i\kappa}{2}},
+\end{equation}
+%%
+\noindent where $I_p$ is the plasma current, $a$ is the minor radius, $A_i$ is the plasma atomic mass number, $\kappa$ is the plasma elongation, $\mu_0$ is the vacuum permeability. Note that $n_c$ is proportional to $I_p$ when $a$, $A_i$ and $\kappa$ keep the same. Figure \ref{fig:loc_soc_hugo} shows the LOC-SOC transition in high (1.2 MA) and low (0.5 MA) plasma current from selected Tore Supra Ohmic heating discharges.
+
+%%
+\begin{figure}
+\begin{centering}
+\includegraphics[scale=0.5]{loc_soc_hugo.png}
+\par\end{centering}
+\caption[LOC-SOC from some dedicated discharges]{The energy confinement time as a function of the central line averaged density from \cite{Arnichand_2015_Thesis}. The magnetic fields are 3.8 T for the discharges studied.}\label{fig:loc_soc_hugo}
+\end{figure}
+%%
+
+The Ohmic heating is strong at low temperatures but becomes less efficient at high temperatures since $\eta$ decreases rapidly with temperature ($\eta \propto T_e^{-3/2}$). So other auxiliary heating methods are required:
+\begin{itemize}
+
+  \item \textbf{Lower-hybrid heating (LH)}: LH uses the electromagnetic waves in the frequency range 1-8 GHz. The frequencies are between the ion and electron cyclotron frequency: $\omega_{ci} < \omega < \omega_{ce}$. LH is particularly useful for current drive because of its effect on current profiles. LH is also the conventional heating methods in long-pulse discharges.
+
+  \item \textbf{Ion cyclotron resonance heating (ICRH)}: ICRH transfers the wave energy to ions at the resonance condition $\omega=\omega_{ci}$. 
+
+  \item \textbf{Electron cyclotron resonance heating (ECRH)}: ECRH directly heats the electrons through microwave generators in the frequency range of GHz.
+
+  \item \textbf{Neutral beam injection (NBI)}: NBI heats both electrons and ions through the Coulomb collisions between the neutral particles and the charged particles in plasmas.
+
+\end{itemize}
+
+In auxiliary heated plasmas, the charged particles gain kinetic energy from the injected waves or beams and become energetic particles. LH and ECRH could generate fast electrons, which can further drive the electron fishbone instabilities. ICRH and NBI give rise to different types of instabilities such as the energetic-ion-driven Alfv\'{e}n waves. 
+
+It was found that tokamak operations transit abruptly from low confinement mode (L-mode) to high confinement mode (H-mode) when the auxiliary heating power reaches a critical value. The underlying physics mechanisms of the L-H transition are still unclear. Some research argues the possible link between the transition and the turbulence suppression. The scaling laws of the threshold power have also been extensively investigated. The confinement time of the H-mode regime is at least twice as large compared to the L-mode regime but at the price of MHD instabilities, so-called edge localized modes (ELMs) \cite{Zohm_1996_PPCF_ELM, Connor_1998_PPCF_ELM, Howard_2008_FST, Leonard_2014_PoP_ELM}, which appears spontaneously in H-mode plasmas.
+
+\subsection{Turbulence study}
+
+Although great processes have been made in tokamak fusion study, one unresolved physical issue remains: plasma turbulence, which causes the large radial particle and energy loss thus degrades the confinement performance.
+
+Turbulence is related to most of the important physical phenomena or processes in fusion plasmas. Among the different confinement regimes or heating methods mentioned, the LOC and SOC regimes might be related to turbulence driven by different micro-instabilities. In additional heating plasmas, turbulence magnitude increases in different level or channels. Turbulence suppression is also related to the L-H transitions.
+
+Therefore, understanding plasma turbulence in tokamkas is such an significant research topic, which could help to control it and enhance the confinement performance. Motivated by this, this work took a first attempt to extract the general properties of plasma turbulence in tokamaks.
+
+\subsection{Tore Supra}
+
+%%
+\begin{figure}
+\begin{centering}
+\includegraphics[scale=0.5]{ts_equi.png}
+\par\end{centering}
+\caption[TS equilibrium]{Typical EFIT equilibrium from a Tore Supra discharge.}\label{fig:ts_equi}
+\end{figure}
+%%
+
+This thesis is based on the Tore Supra machine, which is a circular cross-section limiter tokamak with superconducting toroidal magnets located in CEA Cadarache, France. Tore Supra operated until 2011 after when it has been updated to the new WEST tokamak. The poloidal cross-section of plasmas was changed to D-shape after the update, as shown in Fig.~\ref{fig:ts2west}.
+
+%%
+\begin{figure}
+\begin{centering}
+\includegraphics[scale=0.5]{ts2west.jpg}
+\par\end{centering}
+\caption[]{From the circular cross-section limiter Tore Supra to the D-shape cross-section divertor WEST (Tungsten (W) Environment in Steady-state Tokamak).}\label{fig:ts2west}
+\end{figure}
+%%
+
+One of the research topics Tore Supra focuses on is the technologies and physics of long-pulse steady-state discharges. A typical equilibrium state of a Tore Supra discharge inferred from EFIT \cite{Li_2011_FST} is shown in Fig.~\ref{fig:ts_equi}. Some typical values of basic operation parameters of Tore Supra are listed in table \ref{tab:ts_parameters}.
+
+%%%
+\begin{table}
+\begin{center}
+\begin{tabular}{|c|c|}
+  \hline
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+  Magnetic fields on the axis $B_{0}$ & 3.8 T \\
+  Plasma current $I_p$ & 1 MA \\
+  Major radius $R_{p}$ & 2.38 m \\
+  Minor radius $a$ & 0.72 m \\
+  Plasma elongation $\kappa$ & 1.0 \\
+  Averaged electron density $\langle{n_e}\rangle$ & $2 \times 10^{-19}\ m^{-3}$ \\
+  Central line integrated density $N_{l}$ & $4 \times 10^{-19}\ m^{-2}$ \\
+  Plasma volume & 25 m$^{-3}$ \\
+  Duration & 20 s \\
+  \hline
+\end{tabular}
+\caption{Typical operation parameters of Tore Supra.\label{tab:ts_parameters}}
+\end{center}
+\end{table}
+%%%
+
+\subsubsection{Auxiliary Heating on Tore Supra}
+
+Understanding and controlling turbulence in auxiliary heated plasmas have been a hot topic in fusion plasmas study and also become one of the topics in this thesis.
+
+Tore Supra has been equipped with lower hybrid current Drive (LHCD), ICRH and ECRH systems, the locations of which are shown in Fig.~\ref{fig:ts_heating}. The 3.7 GHz LHCD system was designed to inject 8 MW of additional power in long-pulse operations \cite{Bibet_2001_FED}. LHCD heating can generate suprathermal electrons, which could increase the parasitic noise of some diagnostic measurements. ICRH is the main auxiliary heating system at Tore Supra and its operational frequencies are between 35 MHz to 80 MHz. Three ICRH antennas are installed in port Q1, Q2 and Q5 respectively, and the antenna positions keep almost the same in different discharges. Each antenna can inject up to 4 MW power \cite{Colas_2006_NF_ICRH}. ECRH heats the electrons by microwaves at the frequency of 118 GHz, generated by 2 gyrotrons of 400 kW \cite{Lennholm_2003_NF_ECRH}.
+
+%%
+\begin{figure}
+\begin{centering}
+\includegraphics[scale=0.6]{ts_heating.png}
+\par\end{centering}
+\caption[TS heating systems]{The locations of the LHCD, ICRH and ECRH systems installed at Tore Supra from the top view.}\label{fig:ts_heating}
+\end{figure}
+%%
+
+Although LH and ICRH operate simultaneously sometimes, this thesis only consider the pure LH or pure ICRH discharges to ease the interpretation of the results. The ECRH plasmas are not studied in this thesis because of the limited number of ECRH discharges.
+
+\subsubsection{Diagnostics}
+
+This study is based on the database of Tore Supra thus data from almost all the diagnostics are used. Here, only the most frequently used data are reviewed and the details of the engineering and operating parameters of the diagnostic systems are published in \cite{Gil_2009_FST}.  
+
+The magnetic fields and the basic plasma shape parameters were measured by magnetic loops. The current profiles were measured from polarimetry and motional =
+
+the ion temperature and
+toroidal velocity @from charge-exchange spectroscopy
+~CXS!#,
+
+current profile,
+for which the available measurements on TS @by motional
+Stark effect ~MSE! and polarimetry#
+
+Some basic diagnostics measures electron density $n_e$ and temperature $T_e$:
+\begin{itemize}
+
+  \item A 10-channel far-infrared interferometry system was installed to measure the electron density profiles ($n_e(r)$) with 1 ms time resolution \cite{Gil_2009_FST}. Measurements of edge density has larger uncertainties due to the lack of spatial points in the strong $\nabla n$ region. The interferometry data provide the initial edge density for the calculations of the cut-off positions from fluctuation reflectometry.
+
+  \item A fast-sweeping X-mode reflectometry system detects the edge electron profiles with 2 $\mu$s time resolution and less than 1 cm spatial resolution. The system has 2 reflectometers, operating at V-band (50-75 GHz) and W-band (75-110 GHz) \cite{Clairet_2010_RSI}. Fast-sweeping reflectometry provides a more accurate measurement of $n_e(r)$ than interferometry but could not provide the density profiles for the fixed frequency reflectometry since the two reflectometry diagnostics are coupled in the same system on Tore Supra and cannot operate at the same time.
+
+  \item A 32-channel electron cyclotron emission (ECE) system \cite{Segui_2005_RSI} was installed to measure the electron temperature profiles ($T_e(r)$) with both slow (1 ms) and fast (10 $\mu$s) acquisition and spatial resolution of 2 $\sim$ 3 cm. The ECE is helpful to validate the positions of the q=1 surface.
+
+\end{itemize}
+
+
+In order to carry out a systematic turbulence study, some specific turbulence diagnostics as well as diagnostics for the basic plasma parameters are necessary.
+
+Three reflectometry diagnostics are available for turbulence study in different measurement ranges:%
+\begin{enumerate}
+
+  \item A fixed-frequency D-band (110-150 GHz) reflectometry has been installed to diagnose the core density fluctuation with high signal-to-noise ratio (SNR) \cite{Sabot_2006_NF}.
+
+  \item A Doppler reflectometry can measure the poloidal density fluctuation with different wavenumbers and also provide the turbulence poloidal rotation velocity \cite{Hennequin_2006_NF}.
+
+  \item A fast-sweeping refectometry system has also been used to measure the edge density fluctuation \cite{Vermare_2006_NF}.
+
+\end{enumerate}
+
+
+
+\section{Motivations and objectives of this thesis}
+
+\subsection{Gradient-driven turbulence}
+
+In tokamak fusion plasmas, the electron density ($n_e$) and temperature $T_e$ are very high in the central region to fulfil the ignition condition. The typical $n_e$ and $T_e$ are $1\times 10^{20}\ m^{-3}$ and $10\ keV$, respectively. In the edge region near the wall, $n_e$ and $T_e$ decrease to the order of $10^{17}\ m^{-3}$ and $10\ eV$, respectively, to avoid excessive heat and flux load on the wall.
+
+%%
+\begin{figure}
+\begin{centering}
+\includegraphics[scale=1]{gradient.png}
+\par\end{centering}
+\caption[Gradient from core to edge]{Strong $n_e$ and $T_e$ gradient between the central and edge region of tokamaks. }\label{fig:gradient}
+\end{figure}
+%%
+
+Figure \ref{fig:gradient} illustrates the large disparity of $n_e$ and $T_e$ in the central and edge regions as well as the typical electron density profile $n_e(r)$ and temperature gradient $T_e(r)$. Then, a region with strong gradient of $n_e$, $T_e$ and plasma pressure $p$ ($p=nKT$, with $K$ the Boltzmann constant) exists between the central and edge regions. The strong gradient (directed from the core to the edge) then brings free energy in the plasma thermodynamics system. The free energy causes some micro-instabilities which can develop into the saturation state called \emph{turbulence}. Particles and energy could transfer across the turbulence vortices rapidly. Consequently, the cross-field transport increases and the confinement performance degrades.
+
+The simplified physics process is depicted in Fig.~\ref{fig:process}. In this complex, highly nonlinear and self-regulating system, the underling mechanisms from the micro-instabilities to turbulence are still unknown although linear and nonlinear theories \cite{Diamond_ZF_2005_PPCF} have been developed. Experimentally, Many diagnostics and analysis methods have been developed to measure the fluctuations of density $\tilde{n}$, temperature $\tilde{T}$, phase $\tilde{\phi}$ and magnetic field $\tilde{B}$ originated from plasma turbulence. The relations between turbulence and transport are also unclear so far. Since turbulence has deleterious effects on the confinement, it is very significant to understand the underlying physics in the instabilities-turbulence-transport process. A comprehensive and deep understanding of the turbulence properties could help to control the turbulence and enhance the confinement performance.
+
+%%
+\begin{figure}
+\begin{centering}
+\includegraphics[scale=0.8]{process.png}
+\par\end{centering}
+\caption[Gradient-instability-turbulence-transport]{Simplified physics process of the turbulence and transport process.}\label{fig:process}
+\end{figure}
+%%
+
+In general, experimental analyses of turbulence properties have concentrated on limited numbers of discharges with selected parameters. In this usual approach, only one or a few parameters are scanned, while others are kept constant. This way, analyzing trends occurring over a large range of the operational space, with multiple variables changing at the same time, is difficult.
+
+\subsection{Objective: a systematic turbulence study}
+
+As a complementary approach to more common studies based on the limited, well-controlled data set, this thesis proposes a systematic turbulence analysis using a large database obtained under a wide variety of plasma conditions. Database has been used to investigate some general properties in fusion plasma such as the scaling laws of the confinement time and the L-H power threshold but the application to the turbulence study has not been reported.
+
+The data used in this thesis are the turbulence frequency spectrum inferred from density fluctuation $\tilde{n}$ measurements of fixed frequency reflectometry. The frequency spectrum from the fixed frequency reflectometry contains abundant density fluctuation information with high signal-to-noise ratio (SNR). Usually, a fluctuation frequency spectrum contains the power distribution of $\sim$ 1000 frequencies, i.e., 1000 parameters. The number of parameters in the frequency spectrum are too large to carry out a systematic study so that a parameter reduction is required.
+
+%%
+\begin{figure}
+\begin{centering}
+\includegraphics[scale=0.45]{decomposition.png}
+\par\end{centering}
+\caption[Previous works on spectrum decomposition]{Previous works on the spectrum decomposition. From (a) \cite{Vershkov_2005_NF}, (b) \cite{Kramer-Flecken_2015_NJP}.}\label{fig:decomposition}
+\end{figure}
+%%
+
+The parameter reduction relies on a decomposition of the turbulence spectrum. This decomposition method is based on the pioneering works of \cite{Vershkov_2005_NF} and \cite{Kramer-Flecken_2015_NJP}, as shown in Fig.~\ref{fig:decomposition}. In their works, the power or coherence spectra were decomposed into several components. The physical meaning of each component will be detailed in Chapter 4. Through radial, poloidal and long-range correlation, they have investigated different components of the turbulence spectrum and their properties. In this work, each component in the spectrum is fitted by a simple parameterized function, called \emph{parametrization} of spectrum.
+
+The fluctuation parameters from parametrization are used to characterize the turbulence properties. The study focuses on Ohmic, ICRH and LH plasmas. The turbulence database then includes the fluctuation parameters together with the diagnostics and plasma parameters from other measurements.
+
+%%
+\begin{figure}
+\begin{centering}
+\includegraphics[scale=0.6]{objective.png}
+\par\end{centering}
+\caption[Flow of the systematic study]{The process of a systematic turbulence study from frequency spectrum of density fluctuation measurements by fixed-frequency reflectometry.}\label{fig:objective}
+\end{figure}
+%%
+
+In summary, the process of a systematic study from frequency spectrum is illustrated in Fig.~\ref{fig:objective}. The objectives of this thesis include: %
+\begin{enumerate}
+  \item \textbf{Parameter reduction of frequency spectra};
+  \item \textbf{Extraction of general trends from the turbulence database},
+\end{enumerate}
+\noindent and the systematic turbulence study includes:
+\begin{itemize}
+  \item Radial profiles of fluctuation properties;
+  \item Fluctuation properties dependency on local and global plasma parameters;
+  \item Fluctuation properties in Ohmic (LOC \& SOC) and auxiliary heating (ICRH \& LH) plasmas.
+\end{itemize}
+
+\section{Outline of this thesis}
+
+In order to systematically link the properties of the fluctuation spectrum to the underlying physics in a large set of discharges under widely varying plasma conditions, it is very important to extract in a robust way the salient features from the data and describe them using a minimal set of parameters.
+
+In this work, three different parametric models were used and their performance over the entire database was compared quantitatively. Great care was taken to obtain the optimal solution of the parametrization, taking into account the physical interpretation of the various spectrum components, with satisfactory results. The parametrization method was then applied to investigate the evolution of turbulence with respect to local and global plasma parameters in Ohmic, ICRH and LH plasmas. The following of the thesis report is organized as follows.
+
+\begin{itemize}
+
+  \item \textbf{Chapter 2} first introduces the origination of turbulence in tokamak fusion plasmas from the micro-instabilities, focusing on TEM and ITG instabilities. Then, the relations of the fluctuation measurement signal to the turbulence properties are discussed and the data analysis techniques of the fluctuation signal described. The effects of turbulence on transport and confinement and some important fluctuation properties are discussed.
+
+  \item \textbf{Chapter 3} starts from the review of the classical electromagnetic waves propagation theory. The principles based on the concept of wave reflected on cut-off layer is presented. Then, the link of the fixed frequency fluctuation signal to the fluctuation properties is built. Some issues in the measurements and analysis are discussed to help interpret the fluctuation signal. The reflectometry set-up used in this thesis comes at last.
+
+  \item \textbf{Chapter 4} is dedicated to the parametrization of the fluctuation frequency spectra, focusing on the optimization of the spectrum fitting process. Three fitting models will be compared in statistical and representative spectra.
+
+  \item \textbf{Chapter 5} reports on the parametrization method applied to Ohmic heating plasmas. First, the radial profiles of broadband spectral component contribution are investigated. A basin structure is observed in the core region and its link to the q=1 surface  is discussed. Then, the comparisons of fluctuation properties in LOC and SOC regimes are made. Finally, a new systematic method to reconstruct the radial profiles of fluctuation level is developed.
+
+  \item In \textbf{Chapter 6}, the method is extended to auxiliary heated plasmas including ICRH and LH scenarios. Focus has been put on explaining the different behaviors of fluctuation properties in ICRH discharges
+
+  \item \textbf{Chapter 7} summaries the main results and conclusions of this thesis. Some pending issues and the motivation for future work will be discussed
+
+\end{itemize}
